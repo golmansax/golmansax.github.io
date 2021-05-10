@@ -1,0 +1,628 @@
+/* Using global sytles is not recommended, prefer local styles via CSS Modules */
+
+/*
+ * box model like it should be
+ *
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+ * kill document defaults margin & padding. We all do that all the time, right ?
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * page styles
+ */
+html,
+body,
+#phenomic {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(251, 254, 253);
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
+  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Microsoft YaHei New", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", 宋体, SimSun, STXihei, "\534E\6587\7EC6\9ED1", sans-serif;
+}
+
+/*
+ * .phenomic-HeadingAnchor
+ *
+ * anchors for markdown headings, generated via markdown renderer, so require
+ * global styling
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+.phenomic-HeadingAnchor {
+  display: inline-block;
+  text-align: center;
+  margin-left: -1.8rem;
+  margin-right: 0.4rem;
+  width: 1.4rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+  opacity: 0.1;
+  transition: opacity 0.2s
+}
+
+h1:hover .phenomic-HeadingAnchor,
+h2:hover .phenomic-HeadingAnchor,
+h3:hover .phenomic-HeadingAnchor,
+h4:hover .phenomic-HeadingAnchor,
+h5:hover .phenomic-HeadingAnchor,
+h6:hover .phenomic-HeadingAnchor { opacity: 1; }
+
+/* minimal styling, prefer removing this and use local styles */
+a {
+  color: inherit
+}
+a:hover { text-decoration: underline; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #8C8D91;
+  opacity: 0.2;
+  margin: 2rem 0;
+}
+/**
+ * You can try all official Highlight.js theme here
+ *
+ * https://highlightjs.org/static/demo/
+ *
+ * More themes here
+ *
+ * https://github.com/isagalaev/highlight.js/tree/master/src/styles
+ */
+
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+._2gGRo {
+  width: 100%;
+  padding: 0 0.75rem;
+}
+
+._39MhB {
+  margin: 1.5rem 0;
+}
+
+.BRdRC {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+._3mLO7 {
+  font-weight: 400;
+  display: block;
+  font-size: 65%;
+  margin-top: 0.75rem;
+  text-decoration: inherit;
+}
+
+a.Ezg15 {
+  color: inherit;
+  text-decoration: none
+}
+
+a.Ezg15:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  ._3mLO7 {
+    display: inline-block;
+    margin-left: 0.75rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  ._2gGRo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+._1Ustb {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+._3Kjo4 {
+  margin-top: 0.75rem
+}
+
+._3Kjo4:first-child {
+  margin-top: 0;
+}
+
+._1oKiv {
+  margin-top: 3rem;
+}
+
+@media (min-width: 1200px) {
+  ._1Ustb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+._1vQjn {
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto
+
+  /* handy for content */
+}
+
+._1vQjn img {
+  max-width: 100%;
+}
+
+.miR3p {
+  width: 1152px;
+}
+
+.-uk2S {
+  width: 864px;
+}
+
+a {
+  color: #198565;
+  transition: all 0.2s
+}
+
+a:hover {
+  opacity: 1;
+  color: rgb(21, 111, 84);
+}
+
+.sFWsg {
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.fPlVo {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.JHv7- {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._3SdvW,
+._2AKHx {
+}
+
+._3SdvW {
+  background: url(/pages/HomePage/background.322ed4e10938d266f2e7585f7775fd5d.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 61.8%; /* Roughly 1089 / 1762 (aspect-ratio of background.jpg) */
+}
+
+.lSX28 {
+  display: none;
+}
+
+._33RTY {
+  padding: 1.5rem 0.75rem;
+  width: 100%;
+}
+
+._9vRHK {
+  display: none;
+}
+
+.fPlVo {
+  width: 100%;
+}
+
+._3gAzQ {
+  margin-bottom: 2.25rem
+}
+
+._3gAzQ:last-child {
+  margin-bottom: 0;
+}
+
+._3qk1p {
+  margin: 0 0 0.375rem;
+}
+
+/* Unfortunately need <a> to override other styles */
+._2nhXa,
+a._2nhXa {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0.375rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-decoration: none
+}
+._2nhXa._39_Rn, a._2nhXa._39_Rn {
+  background-color: #00bc70;
+  color: rgb(251, 254, 253);
+}
+._2nhXa._39_Rn:hover, a._2nhXa._39_Rn:hover {
+  background-color: #00a05f;
+  color: rgb(251, 254, 253);
+}
+._2nhXa._1Orpm, a._2nhXa._1Orpm {
+  border-color: #1a4670;
+  color: #1a4670;
+}
+._2nhXa._1Orpm:hover, a._2nhXa._1Orpm:hover {
+  background-color: #ebf4fc;
+}
+._2nhXa._3nFR-, a._2nhXa._3nFR- {
+  background-color: #1b2860;
+  color: #fee9f2;
+}
+._2nhXa._3nFR-:hover, a._2nhXa._3nFR-:hover {
+  color: #f9c4da;
+}
+._2nhXa._3mBxj, a._2nhXa._3mBxj {
+  border-color: #7ec14c;
+  color: #294352;
+}
+._2nhXa._3mBxj:hover, a._2nhXa._3mBxj:hover {
+  background-color: rgb(236, 246, 228);
+}
+._2nhXa._1l_R7, a._2nhXa._1l_R7 {
+  border-color: #17839a;
+  background-color: rgb(254, 243, 197);
+  color: #095684;
+}
+._2nhXa._1l_R7:hover, a._2nhXa._1l_R7:hover {
+  background-color: rgb(254, 236, 158);
+  border-color: #095684;
+}
+._2nhXa.-bmyF, a._2nhXa.-bmyF {
+  color: #000;
+  border-color: #000;
+}
+._2nhXa.-bmyF:hover, a._2nhXa.-bmyF:hover {
+  background-color: rgb(230, 230, 230);
+}
+._2nhXa._3OjMi, a._2nhXa._3OjMi {
+  background-color: #444;
+  color: #f9fafc;
+}
+._2nhXa._3OjMi:hover, a._2nhXa._3OjMi:hover {
+  color: #80d3fb;
+}
+._2nhXa._123nG, a._2nhXa._123nG {
+  background-color: #fff;
+  border-color: #333;
+  color: #333;
+}
+._2nhXa._123nG:hover, a._2nhXa._123nG:hover {
+  background-color: #ecf4fb;
+}
+._2nhXa._21Wim, a._2nhXa._21Wim {
+  background-color: #f48022;
+  color: rgb(251, 254, 253);
+}
+._2nhXa._21Wim:hover, a._2nhXa._21Wim:hover {
+  background-color: rgb(207, 109, 29);
+  color: rgb(251, 254, 253);
+}
+._2nhXa._2ATM5, a._2nhXa._2ATM5 {
+  border-color: #b6d7a8;
+  color: #0b5394; /*
+    &:hover {
+      color: #80d3fb;
+    }
+    */
+}
+._2nhXa.oAPBz, a._2nhXa.oAPBz {
+  border-color: #052541;
+  background-color: #052541;
+  color: white;
+}
+._2nhXa.oAPBz:hover, a._2nhXa.oAPBz:hover {
+  color: rgb(180, 190, 198);
+}
+._2nhXa.v856z, a._2nhXa.v856z {
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+  color: white;
+}
+._2nhXa.v856z:hover, a._2nhXa.v856z:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+.wgx1T {
+  padding-left: 0.75rem;
+  color: #888;
+}
+
+@media (min-width: 768px) {
+  .fPlVo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+
+  .JHv7- {
+    -ms-flex: 1;
+        flex: 1;
+  }
+
+  .lSX28 {
+    display: block;
+  }
+
+  ._2a_2a {
+    display: none;
+  }
+
+  ._33RTY {
+    display: none;
+  }
+
+  ._9vRHK {
+    display: block;
+    color: #555;
+    padding: 1.5rem;
+  }
+
+  ._3SdvW {
+    background-position: -3rem;
+    min-height: 30rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  ._3SdvW {
+    -ms-flex: 2;
+        flex: 2;
+    background-position: center;
+  }
+}
+.uEIh2 {
+  padding-bottom: 1.5rem;
+}
+
+._2oehy {
+  padding-bottom: 1.5rem;
+}
+
+.d0THf p {
+  margin: 0 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  ._3wVH3 {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  ._2oehy {
+    padding-bottom: 0;
+  }
+
+  ._2oehy,
+  .d0THf {
+    padding-right: 1.5rem;
+    -ms-flex: 1;
+        flex: 1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .uEIh2 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+._3WnG0 {
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 1199px) {
+  ._3WnG0 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+._2EsN0 {
+  margin-bottom: 3rem;
+}
+
+.L5BvA {
+  padding-right: 1.5rem;
+}
+
+.L5BvA img {
+  width: 100%;
+  max-width: 15rem;
+  border: 1px solid #8C8D91;
+}
+
+@media (min-width: 768px) {
+  ._2EsN0 {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .L5BvA {
+    -ms-flex: 1;
+        flex: 1;
+    padding-right: 1.5rem;
+  }
+
+  .L5BvA img {
+    max-width: none;
+  }
+
+  ._2NU8O {
+    -ms-flex: 2;
+        flex: 2;
+  }
+}
+
+/* Most of the blockquote styling inspired by https://codepen.io/maxds/pen/DcveB */
+.aOMTp {
+  display: block;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  margin: 0 0 1.5rem;
+  position: relative;
+  border-left: 0.75rem solid #55AA90;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+.aOMTp::before {
+  content: "\201C"; /* Unicode for left double quote */
+  font-size: 3.75rem;
+  color: #888;
+  position: absolute;
+  left: 0.75rem;
+  top: 2.25rem;
+}
+
+.aOMTp::after {
+  content: "";
+}
+
+.J0bTE img {
+  padding: 0.75rem;
+}
+@media (max-width: 1199px) {
+  ._10gx2 {
+    padding: 0 0.75rem;
+  }
+}
