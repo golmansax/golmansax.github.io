@@ -368,12 +368,11 @@ a._2nhXa {
   text-decoration: none
 }
 ._2nhXa._39_Rn, a._2nhXa._39_Rn {
-  background-color: #00bc70;
-  color: rgb(251, 254, 253);
+  background-color: #abffc1; /* Tea green */
+  color: #044d5e; /* Midnight green */
 }
 ._2nhXa._39_Rn:hover, a._2nhXa._39_Rn:hover {
-  background-color: #00a05f;
-  color: rgb(251, 254, 253);
+  background-color: rgb(145, 217, 164); /* Tea green */
 }
 ._2nhXa._1Orpm, a._2nhXa._1Orpm {
   border-color: #1a4670;
