@@ -32,13 +32,13 @@ body,
 }
 
 body {
-  background-color: rgb(251, 254, 253);
-  color: #555;
+  background-color: #F2F2F2;
+  color: #001C3C;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 
   /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
-  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Microsoft YaHei New", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", 宋体, SimSun, STXihei, "\534E\6587\7EC6\9ED1", sans-serif;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Microsoft YaHei New", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", 宋体, SimSun, STXihei, "\534E\6587\7EC6\9ED1", sans-serif;
 }
 
 /*
@@ -210,27 +210,50 @@ hue-6-2: #e6c07b
 }
 
 ._3mLO7 {
+  font-size: 1rem;
   font-weight: 400;
   display: block;
-  font-size: 65%;
-  margin-top: 0.75rem;
   text-decoration: inherit;
+  margin-top: 0.75rem;
 }
 
 a.Ezg15 {
   color: inherit;
-  text-decoration: none
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column
 }
 
 a.Ezg15:hover {
   color: inherit;
-  text-decoration: underline;
+}
+
+.ENT8c {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-right: 1.5rem;
+}
+
+._1XTpw {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 @media (min-width: 768px) {
+  a.Ezg15 {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
   ._3mLO7 {
     display: inline-block;
-    margin-left: 0.75rem;
+    margin-left: 1.5rem;
     margin-top: 0;
   }
 }
@@ -287,13 +310,13 @@ a.Ezg15:hover {
 }
 
 a {
-  color: #198565;
+  color: #001C3C;
   transition: all 0.2s
 }
 
 a:hover {
   opacity: 1;
-  color: rgb(21, 111, 84);
+  color: rgb(0, 17, 36);
 }
 
 .sFWsg {
@@ -428,11 +451,11 @@ a._2nhXa {
 }
 ._2nhXa._21Wim, a._2nhXa._21Wim {
   background-color: #f48022;
-  color: rgb(251, 254, 253);
+  color: #F2F2F2;
 }
 ._2nhXa._21Wim:hover, a._2nhXa._21Wim:hover {
   background-color: rgb(207, 109, 29);
-  color: rgb(251, 254, 253);
+  color: #F2F2F2;
 }
 ._2nhXa._2ATM5, a._2nhXa._2ATM5 {
   border-color: #b6d7a8;
@@ -492,7 +515,7 @@ a._2nhXa {
 
   ._9vRHK {
     display: block;
-    color: #555;
+    color: #001C3C;
     padding: 1.5rem;
   }
 
