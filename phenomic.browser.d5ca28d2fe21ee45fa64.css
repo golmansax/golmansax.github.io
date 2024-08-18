@@ -346,9 +346,9 @@ a:hover {
 }
 
 ._3SdvW {
-  background: url(/pages/HomePage/background_inside.3b4c98c9b5a82a2e252e8a72dd7bc4f8.jpg) no-repeat;
+  background: url(/pages/HomePage/background_inside.aab39eca070d150c84d211056ea52b27.jpg) no-repeat;
   background-size: cover;
-  padding-bottom: 61.8%; /* Roughly 1089 / 1762 (aspect-ratio of background.jpg) */
+  padding-bottom: 66.6%;
 }
 
 .lSX28 {
@@ -391,11 +391,17 @@ a._2nhXa {
   text-decoration: none
 }
 ._2nhXa._39_Rn, a._2nhXa._39_Rn {
-  background-color: #abffc1; /* Tea green */
-  color: #044d5e; /* Midnight green */
+  background-color: #abffc1;
+
+  /* Tea green */
+  color: #044d5e;
+
+  /* Midnight green */
 }
 ._2nhXa._39_Rn:hover, a._2nhXa._39_Rn:hover {
-  background-color: rgb(145, 217, 164); /* Tea green */
+  background-color: rgb(145, 217, 164);
+
+  /* Tea green */
 }
 ._2nhXa._1Orpm, a._2nhXa._1Orpm {
   border-color: #1a4670;
@@ -459,7 +465,9 @@ a._2nhXa {
 }
 ._2nhXa._2ATM5, a._2nhXa._2ATM5 {
   border-color: #b6d7a8;
-  color: #0b5394; /*
+  color: #0b5394;
+
+  /*
     &:hover {
       color: #80d3fb;
     }
